@@ -26,3 +26,10 @@ function capitalise_name(){
     name = first_letter + rest_of_name;
     alert("Hello " + name + " it's nice to meet you!");
 }
+
+// Changes the users dog age into human years
+function dog_age_converter(){
+    var dog_age = prompt("How old is your dog? ");
+    human_age = ((dog_age - 2) * 4) + 21;
+    alert("You're dog is " + human_age + " in human years")
+}
