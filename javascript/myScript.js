@@ -34,8 +34,9 @@ function dog_age_converter(){
     alert("You're dog is " + human_age + " in human years")
 }
 
-function getMilk(money) { 
-    bottles = Math.floor(money / 1.5)  
+function getMilk() { 
+    var money = prompt("How much money do you have for Milk")
+    cost_per_bottle = 1.5
     console.log("leaveHouse");
     console.log("moveRight");
     console.log("moveRight");
@@ -45,7 +46,7 @@ function getMilk(money) {
     console.log("moveUp");
     console.log("moveRight");
     console.log("moveRight");
-    console.log("Buy " + bottles + " bottles of Milk")
+    console.log("Buy " + calcBottles(money, cost_per_bottle) + " bottles of Milk")
     console.log("moveLeft");
     console.log("moveLeft");
     console.log("moveDown");
@@ -55,8 +56,20 @@ function getMilk(money) {
     console.log("moveLeft");
     console.log("moveLeft");
     console.log("enterHouse");
+    
+    alert("You have " + calcBottles(money, cost_per_bottle) + " bottles of milk and €" + calcChange(money, cost_per_bottle) + "  change left.")
   }
 
+  // Calculates how many bottles of milk you can buy by taking in how much money you have and the cost per bottle
+  function calcBottles(money, costPerBottle){
+    var num_bottles = Math.floor(money / costPerBottle);
+    return num_bottles
+  }
+
+  function calcChange(money, costPerBottle){
+    var change = money % costPerBottle;
+    return change;
+  }
   function age_converter(age) {
         
         var years_left = 100 - age;
