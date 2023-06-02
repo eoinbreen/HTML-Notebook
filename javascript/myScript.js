@@ -33,3 +33,38 @@ function dog_age_converter(){
     human_age = ((dog_age - 2) * 4) + 21;
     alert("You're dog is " + human_age + " in human years")
 }
+
+function getMilk(money) { 
+    bottles = Math.floor(money / 1.5)  
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("Buy " + bottles + " bottles of Milk")
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+  }
+
+  function age_converter(age) {
+        
+        var years_left = 100 - age;
+        var days_left = years_left * 365;
+        var weeks_left = years_left * 52;
+        var months_left = years_left * 12;
+        
+        console.log("You have " + days_left + " days, "+ weeks_left + " weeks, and " + months_left + " months left before your 100th birthday.")
+        
+    }
+    
