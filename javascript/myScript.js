@@ -28,7 +28,7 @@ function capitalise_name(){
 }
 
 // Changes the users dog age into human years
-function dog_age_converter(){
+function dogAgeConverter(){
     var dog_age = prompt("How old is your dog? ");
     human_age = ((dog_age - 2) * 4) + 21;
     alert("You're dog is " + human_age + " in human years")
@@ -60,24 +60,31 @@ function getMilk() {
     alert("You have " + calcBottles(money, cost_per_bottle) + " bottles of milk and €" + calcChange(money, cost_per_bottle) + "  change left.")
   }
 
-  // Calculates how many bottles of milk you can buy by taking in how much money you have and the cost per bottle
-  function calcBottles(money, costPerBottle){
-    var num_bottles = Math.floor(money / costPerBottle);
-    return num_bottles
-  }
+// Calculates how many bottles of milk you can buy by taking in how much money you have and the cost per bottle
+function calcBottles(money, costPerBottle){
+var num_bottles = Math.floor(money / costPerBottle);
+return num_bottles
+}
 
-  function calcChange(money, costPerBottle){
-    var change = money % costPerBottle;
-    return change;
-  }
-  function age_converter(age) {
-        
-        var years_left = 100 - age;
-        var days_left = years_left * 365;
-        var weeks_left = years_left * 52;
-        var months_left = years_left * 12;
-        
-        console.log("You have " + days_left + " days, "+ weeks_left + " weeks, and " + months_left + " months left before your 100th birthday.")
-        
-    }
+function calcChange(money, costPerBottle){
+var change = money % costPerBottle;
+return change;
+}
+function ageConverter(age) {
     
+    var years_left = 100 - age;
+    var days_left = years_left * 365;
+    var weeks_left = years_left * 52;
+    var months_left = years_left * 12;
+    
+    console.log("You have " + days_left + " days, "+ weeks_left + " weeks, and " + months_left + " months left before your 100th birthday.")
+    
+}
+ 
+//Get a random number between 1 and 6
+function diceRoll(){
+    var n = Math.random();
+    n = n * 6;
+    n = Math.floor(n) + 1;
+    alert(n);
+}
