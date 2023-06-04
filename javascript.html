@@ -69,6 +69,12 @@
             <label>Your Age: </label>
             <input type="number" id="age" min="1" max="250" value="25"><br>
             <button type="button" onclick="diceRoll()">Dice Roll</button><br>
+            <button type="button" onclick="randomNum(document.getElementById('rand-min').value, document.getElementById('rand-max').value)">Random Number Generator</button>
+            <label>Min: </label>
+            <input type="number" id="rand-min" min="1" max="250" value="1">
+            <label>Max: </label>
+            <input type="number" id="rand-max" min="1" max="250" value="10">
+            <br>
             
        
     </body>

@@ -88,3 +88,16 @@ function diceRoll(){
     n = Math.floor(n) + 1;
     alert(n);
 }
+
+//Get a random number between 2 numbers
+function randomNum(min, max){
+    if(min > max){ //checks if someone enters the figures in the wrong order, switches them around if they did
+        var temp = min;
+        min = max;
+        max = temp;
+    }
+    min = Math.round(min); // turns figures into integers
+    max = Math.round(max);
+    rand_num = Math.floor(Math.random() * (max - min + 1))// Random number is multiplied by the difference + 1 so the maximum number is included;
+    alert( rand_num + min); // Min is added to the random number to start the numbers from the minimum
+}
