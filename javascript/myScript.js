@@ -86,7 +86,12 @@ function diceRoll(){
     var n = Math.random();
     n = n * 6;
     n = Math.floor(n) + 1;
-    alert(n);
+    if(n === 6){    //Use === rather than ==
+        alert(n + ", Perfect Roll!");
+    }
+    else{
+        alert(n);
+    }
 }
 
 //Get a random number between 2 numbers

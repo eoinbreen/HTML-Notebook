@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Examples</title>
+        <!-- BOOTSTRAP LINKS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="icon" href="images/favicon.ico"> <!-- www.favicon.cc -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!-- Javascript -->
+        <script src="javascript/myScript.js"></script>
+        
+        <!--LINK FOR NAVBAR -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <style>
+          button{
+            width: 200px;
+            margin: 5px;
+          }
+        </style>
+    </head>
+    <body>
+      <section class="nav-container">
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+      
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+      </section>
+
+
+      <img class="logo" src="images/HTML.JPG" alt="HTML Image" >
+      <h1 id="title">Javascript Examples</h1>
+      <p>Javascript is used to add programming into a website in 
+          order to allow web developers to expand what their websites can do.</p>
+
+          <button type="button" onclick="greeting()">Greeting</button><br>
+          <button type="button" onclick="char_count()">Character Counter</button><br>
+          <button type="button" onclick="slice_message()">Slice</button>
+          <label>Max Characters: </label>
+          <input type="number" id="slice-max" min="1" max="250" value="100"><br>
+          <button type="button" onclick="capitalise_name()">Capitalise Name</button><br>
+          <button type="button" onclick="dogAgeConverter()">Dog Age Converter</button><br>
+          <button type="button" onclick="getMilk()">Get Milk</button><br>
+          <button type="button" onclick="ageConverter(document.getElementById('age').value)">Age Converter</button>
+          <label>Your Age: </label>
+          <input type="number" id="age" min="1" max="250" value="25"><br>
+          <button type="button" onclick="diceRoll()">Dice Roll</button><br>
+          <button type="button" onclick="randomNum(document.getElementById('rand-min').value, document.getElementById('rand-max').value)">Random Number Generator</button>
+          <label>Min: </label>
+          <input type="number" id="rand-min" min="1" max="250" value="1">
+          <label>Max: </label>
+          <input type="number" id="rand-max" min="1" max="250" value="10">
+          <br>
+          
+      
+  </body>
+ </html>
