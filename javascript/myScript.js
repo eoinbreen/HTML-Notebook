@@ -94,6 +94,20 @@ function diceRoll(){
     }
 }
 
+//Get a random number between 2 numbers
+function randomNum(min, max){
+    if(min > max){ //checks if someone enters the figures in the wrong order, switches them around if they did
+        var temp = min;
+        min = max;
+        max = temp;
+    }
+    min = Math.round(min); // turns figures into integers
+    max = Math.round(max);
+    rand_num = Math.floor(Math.random() * (max - min + 1))// Random number is multiplied by the difference + 1 so the maximum number is included;
+    alert( rand_num + min); // Min is added to the random number to start the numbers from the minimum
+}
+
+// Takes in Weight in Kg and Height in M to calculate a persons Body Mass Index
 function bmiCalculator (weight, height) {
     var bmi = weight / Math.pow(height, 2);
     var interpretation = "";
@@ -110,15 +124,23 @@ function bmiCalculator (weight, height) {
     alert(interpretation);
 }
 
-//Get a random number between 2 numbers
-function randomNum(min, max){
-    if(min > max){ //checks if someone enters the figures in the wrong order, switches them around if they did
-        var temp = min;
-        min = max;
-        max = temp;
+function isLeap(year)
+{
+    var is_leap = false;
+
+    if(year % 100 === 0 && year % 400 !== 0){
+        is_leap = false;
     }
-    min = Math.round(min); // turns figures into integers
-    max = Math.round(max);
-    rand_num = Math.floor(Math.random() * (max - min + 1))// Random number is multiplied by the difference + 1 so the maximum number is included;
-    alert( rand_num + min); // Min is added to the random number to start the numbers from the minimum
+    else if(year % 4 === 0){
+        is_leap = true;
+    }
+
+    if(is_leap)
+    {
+        alert(year + " is a Leap Year.");
+    }
+    else{
+        alert(year + " is not Leap Year.");
+    }
+    
 }
