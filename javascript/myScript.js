@@ -27,6 +27,13 @@ function capitalise_name(){
     alert("Hello " + name + " it's nice to meet you!");
 }
 
+function capitalise_name(name){
+    var first_letter = name.slice(0,1);
+    first_letter = first_letter.toUpperCase();
+    rest_of_name = name.slice(1, name.length).toLowerCase()
+    name = first_letter + rest_of_name;
+    return name;
+}
 // Changes the users dog age into human years
 function dogAgeConverter(){
     var dog_age = prompt("How old is your dog? ");
@@ -141,6 +148,19 @@ function isLeap(year)
     }
     else{
         alert(year + " is not Leap Year.");
+    }
+    
+}
+
+function guestList(){
+    var name = prompt("What is your name?");
+    name = capitalise_name(name);
+    var guest_list = ["Eoin", "Nicky", "Johnny", "Peter", "Mark", "Rachel", "Claire", "Elaine"]
+    if(guest_list.includes(name)){
+        alert("Welcome " + name + ", you were invited")
+    }
+    else{
+        alert(name + ", you were not invited, please escort yourself off the premises")
     }
     
 }
