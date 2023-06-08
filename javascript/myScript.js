@@ -162,5 +162,16 @@ function guestList(){
     else{
         alert(name + ", you were not invited, please escort yourself off the premises")
     }
-    
 }
+
+function whosPaying(){
+    var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+    
+    var rand =  Math.random();
+    rand = Math.floor(rand * names.length);
+    var name = names[rand];
+    var output = name + " is going to buy lunch today!";
+    
+    alert(output);
+}
+
