@@ -166,9 +166,7 @@ function guestList(){
 
 function whosPaying(){
     var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
-    
-    var rand =  Math.random();
-    rand = Math.floor(rand * names.length);
+    rand = Math.floor(Math.random() * names.length);
     var name = names[rand];
     var output = name + " is going to buy lunch today!";
     
@@ -194,4 +192,18 @@ function fizzBuzz(){
         i++;
     }
     alert(output);
+}
+
+function ninteyNineBottles(){
+    var bottles = 99;
+    while(bottles > 1){
+        console.log(bottles + " bottles of beer on the wall, " + bottles + " bottles of beer.")
+        bottles --;
+        console.log("Take one down and pass it around, " + bottles + " bottles of beer on the wall.")
+    }
+    console.log(bottles + " bottle of beer on the wall, " + bottles + " bottle  of beer.")
+    console.log("Take one down and pass it around, no more bottles of beer on the wall.")
+
+    console.log("No more bottles of beer on the wall, no more bottles of beer.");
+    console.log("Go to the store and buy some more, 99 bottles of beer on the wall");
 }

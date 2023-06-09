@@ -49,7 +49,12 @@ li.red{ /* Chain Selector, selects all of the li with "red" class*/
 
 
 
-
+@media (min-width: 1000px){
+            
+    .logo{
+        width: 40%;
+    }
+  }
 
 
 
