@@ -175,8 +175,7 @@ function whosPaying(){
 
 function fizzBuzz(){
     var output = [];
-    var i = 1;
-    while(i <= 100){
+    for(var i = 1; i <= 100; i++){
         if(i % 3 === 0 && i % 5 === 0){
             output.push("FizzBuzz");
         }
@@ -189,9 +188,8 @@ function fizzBuzz(){
         else{
             output.push(i);
         }
-        i++;
     }
-    alert(output);
+    console.log(output);
 }
 
 function ninteyNineBottles(){
@@ -206,4 +204,18 @@ function ninteyNineBottles(){
 
     console.log("No more bottles of beer on the wall, no more bottles of beer.");
     console.log("Go to the store and buy some more, 99 bottles of beer on the wall");
+}
+
+function fibonacciGenerator(iterations){
+    var fibonacci = [0];
+    if(iterations > 1){
+        var fibonacci = [0,1];
+        var newNum;
+        for(var i = 2; i < iterations; i++){// start i at 2 as array already has first 2 values
+            newNum = fibonacci[i-2] + fibonacci[i-1];
+            fibonacci.push(newNum); 
+        }
+    }
+    
+    alert(fibonacci);
 }
