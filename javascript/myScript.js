@@ -103,13 +103,14 @@ function diceRoll(){
 
 //Get a random number between 2 numbers
 function randomNum(min, max){
+    min = Number(min); // turns inputs into integers
+    max = Number(max);
     if(min > max){ //checks if someone enters the figures in the wrong order, switches them around if they did
         var temp = min;
         min = max;
         max = temp;
     }
-    min = Math.round(min); // turns figures into integers
-    max = Math.round(max);
+    
     rand_num = Math.floor(Math.random() * (max - min + 1))// Random number is multiplied by the difference + 1 so the maximum number is included;
     alert( rand_num + min); // Min is added to the random number to start the numbers from the minimum
 }
@@ -218,4 +219,27 @@ function fibonacciGenerator(iterations){
     }
     
     alert(fibonacci);
+}
+
+function add(num1, num2){
+    return num1 + num2; 
+}
+
+function subtract(num1, num2){
+    return num1 - num2;
+}
+
+function multiply(num1, num2){
+    return num1 * num2;
+}
+
+function divide(num1, num2){
+    return num1 / num2;
+}
+
+function calculator(num1, num2, operator){
+    num1 = Number(num1);
+    num2 = Number(num2);
+    let operator_function = window[operator]; // Allows us to call function using the name in a string
+    alert(operator_function(num1, num2));
 }

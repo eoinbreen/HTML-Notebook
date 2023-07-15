@@ -43,18 +43,26 @@
       <p>Javascript is used to add programming into a website in 
           order to allow web developers to expand what their websites can do.</p>
 
-          <button type="button" onclick="greeting()">Greeting</button><br>
-          <button type="button" onclick="char_count()">Character Counter</button><br>
+          <button type="button" onclick="greeting()">Greeting</button>
+          <br>
+          <button type="button" onclick="char_count()">Character Counter</button>
+          <br>
           <button type="button" onclick="slice_message()">Slice</button>
           <label>Max Characters: </label>
-          <input type="number" id="slice-max" min="1" max="250" value="100"><br>
-          <button type="button" onclick="capitalise_name()">Capitalise Name</button><br>
-          <button type="button" onclick="dogAgeConverter()">Dog Age Converter</button><br>
-          <button type="button" onclick="getMilk()">Get Milk</button><br>
+          <input type="number" id="slice-max" min="1" max="250" value="100">
+          <br>
+          <button type="button" onclick="capitalise_name()">Capitalise Name</button>
+          <br>
+          <button type="button" onclick="dogAgeConverter()">Dog Age Converter</button>
+          <br>
+          <button type="button" onclick="getMilk()">Get Milk</button>
+          <br>
           <button type="button" onclick="ageConverter(document.getElementById('age').value)">Age Converter</button>
           <label>Your Age: </label>
-          <input type="number" id="age" min="1" max="250" value="25"><br>
-          <button type="button" onclick="diceRoll()">Dice Roll</button><br>
+          <input type="number" id="age" min="1" max="250" value="25">
+          <br>
+          <button type="button" onclick="diceRoll()">Dice Roll</button>
+          <br>
           <button type="button" onclick="randomNum(document.getElementById('rand-min').value, document.getElementById('rand-max').value)">Random Number Generator</button>
           <label>Min: </label>
           <input type="number" id="rand-min" min="1" max="250" value="1">
@@ -69,14 +77,31 @@
           <br>
           <button type="button" onclick="isLeap(document.getElementById('year').value)">Leap Year Calculator</button>
           <label>Year: </label>
-          <input type="number" id="year" min="0" max="3000" step="1" value="2000"><br>
-          <button type="button" onclick="guestList()">Guest List</button><br>
-          <button type="button" onclick="whosPaying()">Whos Paying</button><br>
-          <button type="button" onclick="fizzBuzz()">FizzBuzz</button><br>
-          <button type="button" onclick="ninteyNineBottles()">99 Bottles</button><br>
+          <input type="number" id="year" min="0" max="3000" step="1" value="2000">
+          <br>
+          <button type="button" onclick="guestList()">Guest List</button>
+          <br>
+          <button type="button" onclick="whosPaying()">Whos Paying</button>
+          <br>
+          <button type="button" onclick="fizzBuzz()">FizzBuzz</button>
+          <br>
+          <button type="button" onclick="ninteyNineBottles()">99 Bottles</button>
+          <br>
           <button type="button" onclick="fibonacciGenerator(document.getElementById('fibonacci').value)">Fibonacci</button>
           <label>iterations: </label>
-          <input type="number" id="fibonacci" min="1" max="100" step="1" value="10"><br>
+          <input type="number" id="fibonacci" min="1" max="100" step="1" value="10">
+          <br>
+          <button type="button" onclick="calculator(document.getElementById('calculator_1').value, document.getElementById('calculator_2').value, document.getElementById('operators').value)">Calculator</button>
+          <input type="number" id="calculator_1" min="1" max="250" value="1">
+          <input type="number" id="calculator_2" min="1" max="250" value="1">
+          <select id="operators" name="operators">
+            <option value="add">add</option>
+            <option value="subtract">subtract</option>
+            <option value="multiply">multiply</option>
+            <option value="divide">divide</option>
+          </select>
+          <br>
+
       
   </body>
  </html>
