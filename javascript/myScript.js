@@ -244,6 +244,14 @@ function calculator(num1, num2, operator){
     alert(operator_function(num1, num2));
 }
 
+function play_sound()
+{
+    var sound_value = document.querySelector("input[name='sounds']:checked").value; // get the value from the sounds radio buttons
+    var sound_location = "sounds/" + sound_value + ".mp3";
+    var audio = new Audio(sound_location);
+    audio.play();
+
+}
 
 // Style Documentation https://www.w3schools.com/jsref/dom_obj_style.asp
 
